@@ -1,2 +1,2 @@
-# ctf-write-up
-My CTF write-up :drop_of_blood:
+# CTF Write-ups
+CTF write-ups written by me.
