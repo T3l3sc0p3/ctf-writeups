@@ -3,8 +3,8 @@ Be honest, you have always wanted an online tool that could help you convert UNI
 ## Write-up
 First, I started to put some numbers to convert. But when putting some commands like `ls` in there. It appears this error: `exit status 1`
 
-So I started adding ';' after the numbers to execute `Command Injection`.
-';' often called the terminator for lines of code in a programming language. In addition, it is also used to combine multiple commands.
+So I started adding ';' after the numbers to execute `Command Injection`
+';' often called the terminator for lines of code in a programming language. In addition, it is also used to combine multiple commands
 As the example below, after converting the time, it will execute the command `ls`
 
 ```9;ls```
