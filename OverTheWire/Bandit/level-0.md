@@ -11,4 +11,4 @@ ssh
 
 ```ssh bandit0@bandit.labs.overthewire.org -p 2220```
 
-After connecting to bandit0 with the bandit0 password, use `cat readme` to get the password to level 1
+After connecting to bandit0 with the `bandit0` password, use `cat readme` to get the password to level 1
