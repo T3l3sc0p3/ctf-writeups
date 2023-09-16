@@ -1,2 +1,2 @@
 # CTF Write-ups
-CTF write-ups written by me.
+CTF write-ups written by me (⊙_⊙)
