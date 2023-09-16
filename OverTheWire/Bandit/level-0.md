@@ -6,3 +6,9 @@ The goal of this level is for you to log into the game using SSH. The host to wh
 ### Commands you may need to solve this level
 
 ssh
+
+## Solution
+
+```ssh bandit0@bandit.labs.overthewire.org -p 2220```
+
+After connecting to bandit0 with the bandit0 password, use `cat readme` to get the password to level 1
