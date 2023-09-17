@@ -11,4 +11,6 @@ The password for the next level is stored in a file somewhere under the `inhere`
 
 Run `find inhere/ -type f -size 1033c` to find files that match the task
 
-You will see that `inhere/maybehere07/.file2` matchs the task
+You will see that `inhere/maybehere07/.file2` has all of the properties required by the task
+
+Run `cat inhere/maybehere07/.file2` to get the password to the next level
