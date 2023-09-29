@@ -11,4 +11,3 @@ As the example below, after converting the time, it will execute the command `ls
 
 And after a while of searching, I found the flag with the command: `9;env` (`env` is used to print environment variables)
 
-Flag: ```flag{7da6c7debd40bd611560c13d8149b647}```
