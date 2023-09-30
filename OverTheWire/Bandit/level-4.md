@@ -7,4 +7,4 @@ The password for the next level is stored in the only human-readable file in the
 
 First, run `file inhere/*` to find which ones is human-readable file and you will see that `-file07` is human-readable file because it is ASCII text
 
-After that, run `cat inhere/-file07` to get the password to the next level
+After that, run `cat inhere/-file07` to get the password to the level 5
