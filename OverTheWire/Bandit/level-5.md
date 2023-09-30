@@ -1,4 +1,4 @@
-# Bandit Level 5 → Level 6
+# [Bandit Level 5 → Level 6](https://overthewire.org/wargames/bandit/bandit6.html)
 ## Level Goal
 
 The password for the next level is stored in a file somewhere under the `inhere` directory and has all of the following properties:
@@ -9,7 +9,7 @@ The password for the next level is stored in a file somewhere under the `inhere`
 
 ## Solution
 
-Run `find inhere/ -type f -size 1033c` to find files that match the task
+Run `find . -type f -size 1033c ! -executable -exec file {} +` to find files that match the task
 
 You will see that `inhere/maybehere07/.file2` has all of the properties required by the task
 
