@@ -11,4 +11,4 @@ First, use `ls -al inhere/` to list all file (even the file starting with .) and
 
 `-l` mean use a long listing format
 
-After that, use `cat inhere/.hidden` to get the password to the next level
+After that, use `cat inhere/.hidden` to get the password to the level 4

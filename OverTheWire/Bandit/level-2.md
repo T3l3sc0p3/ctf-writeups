@@ -5,4 +5,4 @@ The password for the next level is stored in a file called `spaces in this filen
 
 ## Solution
 
-Use `cat 'spaces in this filename'` or `cat spaces\ in\ this\ filename` to get the password to the next level
+Use `cat 'spaces in this filename'` or `cat spaces\ in\ this\ filename` to get the password to the level 3

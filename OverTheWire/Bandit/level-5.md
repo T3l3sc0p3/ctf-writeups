@@ -13,4 +13,4 @@ Run `find . -type f -size 1033c ! -executable -exec file {} +` to find files tha
 
 You will see that `inhere/maybehere07/.file2` has all of the properties required by the task
 
-Run `cat inhere/maybehere07/.file2` to get the password to the next level
+Run `cat inhere/maybehere07/.file2` to get the password to the level 6
