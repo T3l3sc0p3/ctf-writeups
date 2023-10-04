@@ -9,7 +9,9 @@ First, I use the `strings` command to print the sequences of printable or human-
 
 ```strings data.txt```
 
-First, I used the `grep` command to search for strings preceded by `=` characters. Then, I combined 2 commands using a pipeline to obtain the password for level 10
+Then, I used the `grep` command to search for strings preceded by `=` characters
+
+Finally, I combined 2 commands using a pipeline to obtain the password for level 10
 
 ```strings data.txt | grep ==```
 
