@@ -9,7 +9,7 @@ First, I read the `data.txt` file and noticed that it contained many duplicate a
 
 ```sort data.txt```
 
-After sorting the file, I use the command `uniq -u` to get only unique lines. Finally, I combined the 2 commands together through a pipeline
+After sorting the file, I use the command `uniq -u` to get only unique lines. Finally, I combined 2 commands using a pipeline
 
 ```sort data.txt | uniq -u```
 
