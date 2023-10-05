@@ -15,4 +15,4 @@ Or this command to solve it if you want to: `cat data.txt | tr 'A-Za-z' 'N-ZA-Mn
 
 ### Note
 
-`tr` is used to translate, squeeze, and/or delete characters. Use `man tr` for more informations
+`tr` is used to translate, squeeze, and/or delete characters. Use `man tr` for more information
