@@ -13,4 +13,4 @@ After that, I ran `base64 -d data.txt` command to decode the data and obtain the
 
 ### Note
 
-`-d` or `--decode` flag is used to decode data. You can run `man base64` in your terminal to discover about other flag
+`-d` or `--decode` flag is used to decode data. You can run `man base64` in your terminal to discover for other flags
