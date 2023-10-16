@@ -15,6 +15,6 @@ When I ran `python ende.py`, it displayed a usage message
 
 ![Usage](https://i.imgur.com/49BEfrl.png)
 
-Based on that, I ran `python -d flag.txt.en`, with the `-d` option likely meaning "decode". After entering the password, I got the flag
+Based on that, I ran `python ende.py -d flag.txt.en`, with the `-d` option likely meaning "decode". After entering the password, I got the flag
 
 You can use the command `python ende.py -h` to see more detail about how it works or try encoding the flag again :)
