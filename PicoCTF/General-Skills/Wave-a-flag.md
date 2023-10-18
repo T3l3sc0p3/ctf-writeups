@@ -24,3 +24,9 @@ After you've made the program executable, run it using the command `./warm`. Thi
 Follow the message, add the `-h` option to the command, like this: `./warm -h` and you will get the flag ;)
 
 ![flag](https://i.imgur.com/iAiaDAC.png)
+
+### Note
+
+A trick to find the flag faster is using the command: `strings warm | grep picoCTF{`
+
+![trick](https://i.imgur.com/NkS1bgi.png)
