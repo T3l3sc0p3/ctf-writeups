@@ -14,7 +14,7 @@ And if you don't know how to run this script correctly, just type `./ltdis.sh`, 
 
 ![Usage](https://i.imgur.com/y5EvsY7.png)
 
-This script will try to disassemble the file, making it easier to read the flag as you can see in the image below
+This script will try to disassemble the file, making it easier to read the flag as you can see in the image below (It will create 2 text files after running successfully)
 
 ![flag](https://i.imgur.com/O4ArG2L.png)
 
