@@ -1,18 +1,16 @@
-# [Bandit Level 11 → Level 12](https://overthewire.org/wargames/bandit/bandit12.html)
+# [Bandit Level 10 → Level 11](https://overthewire.org/wargames/bandit/bandit11.html)
 ## Level Goal
 
-The password for the next level is stored in the file **data.txt**, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+The password for the next level is stored in the file **data.txt**, which contains base64 encoded data
 
 ## Solution
 
-Just like [level 10](https://github.com/T3l3sc0p3/ctf-write-up/blob/master/OverTheWire/Bandit/level-10.md), this's also an encoded data. It called **Caesar Cipher**. You can check it out [here](https://www.geeksforgeeks.org/caesar-cipher-in-cryptography/)
+Before solving this level, you may want to check out `base64` [here](https://en.wikipedia.org/wiki/Base64)
 
-The term **Rot13** that you see in the `Helpful Reading Material` section is actually a **Caesar Cipher** with a shift of 13
+When I check the data.txt file, I discovered that the data was encoded in base64. It could be identified by the presence of either `=` or `==` at the end
 
-So you can use the online tool like [rot-13-cipher](https://www.dcode.fr/rot-13-cipher) or [caesar-cipher](https://www.dcode.fr/caesar-cipher)
-
-Or this command to solve it if you want to: `cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'`
+After that, I ran `base64 -d data.txt` command to decode the data and obtain the password for level 11. Not too hard, right?
 
 ### Note
 
-`tr` is used to translate, squeeze, and/or delete characters. Use `man tr` for more information
+`-d` or `--decode` flag is used to decode data. You can run `man base64` in your terminal to discover for other flags

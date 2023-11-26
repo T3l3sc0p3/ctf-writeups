@@ -1,16 +1,20 @@
-# [Bandit Level 10 → Level 11](https://overthewire.org/wargames/bandit/bandit11.html)
+# [Bandit Level 9 → Level 10](https://overthewire.org/wargames/bandit/bandit10.html)
 ## Level Goal
 
-The password for the next level is stored in the file **data.txt**, which contains base64 encoded data
+The password for the next level is stored in the file **data.txt** in one of the few human-readable strings, preceded by several `=` characters.
 
 ## Solution
 
-Before solving this level, you may want to check out `base64` [here](https://en.wikipedia.org/wiki/Base64)
+First, I use the `strings` command to print the sequences of printable or human-readable characters in `data.txt`
 
-When I check the data.txt file, I discovered that the data was encoded in base64. It could be identified by the presence of either `=` or `==` at the end
+```strings data.txt```
 
-After that, I ran `base64 -d data.txt` command to decode the data and obtain the password for level 11. Not too hard, right?
+Then, I used the `grep` command to search for strings preceded by `=` characters
+
+Finally, I combined 2 commands using a pipeline to obtain the password for level 10
+
+```strings data.txt | grep ==```
 
 ### Note
 
-`-d` or `--decode` flag is used to decode data. You can run `man base64` in your terminal to discover for other flags
+`strings` is used to print the sequences of printable characters in files

@@ -1,10 +1,14 @@
-# [Bandit Level 4 → Level 5](https://overthewire.org/wargames/bandit/bandit5.html)
+# [Bandit Level 3 → Level 4](https://overthewire.org/wargames/bandit/bandit4.html)
 ## Level Goal
 
-The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the "reset" command.
+The password for the next level is stored in a hidden file in the **inhere** directory.
 
 ## Solution
 
-First, run `file inhere/*` to find which ones is human-readable file and you will see that `-file07` is human-readable file because it is ASCII text
+First, use `ls -al inhere/` to list all file (even the file starting with .) and you will get `.hidden` file
 
-After that, run `cat inhere/-file07` to get the password to the level 5
+`-a` mean do not ignore entries starting with . (dot)
+
+`-l` mean use a long listing format
+
+After that, use `cat inhere/.hidden` to get the password to the level 4

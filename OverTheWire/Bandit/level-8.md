@@ -1,20 +1,16 @@
-# [Bandit Level 8 → Level 9](https://overthewire.org/wargames/bandit/bandit9.html)
+# [Bandit Level 7 → Level 8](https://overthewire.org/wargames/bandit/bandit8.html)
 ## Level Goal
 
-The password for the next level is stored in the file **data.txt** and is the only line of text that occurs only once
+The password for the next level is stored in the file **data.txt** next to the word **millionth**
 
 ## Solution
 
-First, I read the `data.txt` file and noticed that it contained many duplicate and mixed lines. Therefore, I need to sort it using the `sort` command
+First, you need to know about `grep`. This is a useful command to search for matching patterns in files
 
-```sort data.txt```
-
-After sorting the file, I use the command `uniq -u` to get only unique lines. Finally, I combined 2 commands using a pipeline
-
-```sort data.txt | uniq -u```
+Then, you can use `cat data.txt | grep millionth` or `grep -R millionth` to find the password to level 8
 
 ### Note
 
-`sort` is used to sort a file, arranging the records in a particular order (from [GeeksforGeeks](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/))
+`|` is called pipeline. A pipeline takes the output of one command as the input of next command
 
-`uniq` is used to report or omit repeated lines. The flag `-u` or `--unique` in the above command will make it only print unique lines
+`-R`, `-r` or `--recursive` will read all files under each directory, recursively (from [Explainshell.com](https://explainshell.com/explain?cmd=grep+-R+millionth))
