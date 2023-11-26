@@ -1,16 +1,16 @@
-# [Bandit Level 6 → Level 7](https://overthewire.org/wargames/bandit/bandit7.html)
+# [Bandit Level 5 → Level 6](https://overthewire.org/wargames/bandit/bandit6.html)
 ## Level Goal
 
-The password for the next level is stored somewhere on the server and has all of the following properties:
+The password for the next level is stored in a file somewhere under the **inhere** directory and has all of the following properties:
 
-- owned by user bandit7
-- owned by group bandit6
-- 33 bytes in size
+- human-readable
+- 1033 bytes in size
+- not executable
 
 ## Solution
 
-Run `find / -user bandit7 -group bandit6 -size 33c 2>/dev/null` to find files that match the task
+Run `find . -type f -size 1033c ! -executable -exec file {} +` to find files that match the task
 
-In the above command, the `2>/dev/null` part redirects any error messages to /dev/null, preventing them from being displayed.
+You will see that `inhere/maybehere07/.file2` has all of the properties required by the task
 
-After finding `/var/lib/dpkg/info/bandit7.password`, you can obtain the password for the level 7
+Run `cat inhere/maybehere07/.file2` to get the password to the level 6

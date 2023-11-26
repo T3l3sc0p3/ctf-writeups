@@ -1,16 +1,16 @@
-# [Bandit Level 7 → Level 8](https://overthewire.org/wargames/bandit/bandit8.html)
+# [Bandit Level 6 → Level 7](https://overthewire.org/wargames/bandit/bandit7.html)
 ## Level Goal
 
-The password for the next level is stored in the file **data.txt** next to the word **millionth**
+The password for the next level is stored somewhere on the server and has all of the following properties:
+
+- owned by user bandit7
+- owned by group bandit6
+- 33 bytes in size
 
 ## Solution
 
-First, you need to know about `grep`. This is a useful command to search for matching patterns in files
+Run `find / -user bandit7 -group bandit6 -size 33c 2>/dev/null` to find files that match the task
 
-Then, you can use `cat data.txt | grep millionth` or `grep -R millionth` to find the password to level 8
+In the above command, the `2>/dev/null` part redirects any error messages to /dev/null, preventing them from being displayed.
 
-### Note
-
-`|` is called pipeline. A pipeline takes the output of one command as the input of next command
-
-`-R`, `-r` or `--recursive` will read all files under each directory, recursively (from [Explainshell.com](https://explainshell.com/explain?cmd=grep+-R+millionth))
+After finding `/var/lib/dpkg/info/bandit7.password`, you can obtain the password for the level 7
