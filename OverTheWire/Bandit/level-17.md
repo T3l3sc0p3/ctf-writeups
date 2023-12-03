@@ -36,5 +36,5 @@ Oh, look like here **sshkey.private** file permission should be changed using th
 Finally, connect to the server again and access the password for level 17, which is located at `/etc/bandit_pass/bandit17`
 
 ### Notes
-
-This is the explanation why I use `chmod 600`: [https://security.stackexchange.com/questions/256116/how-does-chmod-600-to-private-ssh-keys-make-them-secure-what-is-the-minimum-a](https://security.stackexchange.com/questions/256116/how-does-chmod-600-to-private-ssh-keys-make-them-secure-what-is-the-minimum-a)
+1. Now you can use password to connect to the level 17 or continue to use **sshkey.private** if you want to ;)
+2. This is the explanation why I use `chmod 600`: [https://security.stackexchange.com/questions/256116/how-does-chmod-600-to-private-ssh-keys-make-them-secure-what-is-the-minimum-a](https://security.stackexchange.com/questions/256116/how-does-chmod-600-to-private-ssh-keys-make-them-secure-what-is-the-minimum-a)
