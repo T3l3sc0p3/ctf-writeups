@@ -20,3 +20,19 @@ This command will listen for any connections that are made to port 1337:
 Next, in a new terminal window, run the command `./suconnect 1337` to connect to the listening port
 
 Back to the previous terminal, and type in the current password. The server will return the password for the next level
+
+### Note
+
+After reading some writeups, I realize that there is a faster way to solve this level
+
+First, run `echo "VxCazJaVykI6W36BkBU0mJTCM8rR95XT" | nc -lvnp 1337 &`
+
+`&` is used to run the command in the background
+
+`|` is used to take the output of the first command as the input for the second command
+
+To view all the processes, use the command `jobs` to get that
+
+Finally, run `./suconnect 1337` and it will return the password for the next level
+
+![](assets/level-21/fasterway.png)
