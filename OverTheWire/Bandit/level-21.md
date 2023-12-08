@@ -23,7 +23,7 @@ Back to the previous terminal, and type in the current password. The server will
 
 ### Note
 
-After reading some writeups, I realize that there is a faster way to solve this level
+After reading some writeups, I realized that there is a faster way to solve this level
 
 First, run `echo "VxCazJaVykI6W36BkBU0mJTCM8rR95XT" | nc -lvnp 1337 &`
 
