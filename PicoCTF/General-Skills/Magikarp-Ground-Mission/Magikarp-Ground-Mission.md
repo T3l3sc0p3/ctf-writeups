@@ -27,3 +27,11 @@ Now, you get the second part of the flag, which is `0ut_0f_\/\/4t3r_`. To get th
 ![](3of3.png)
 
 ```Flag: picoCTF{xxsh_0ut_0f_\/\/4t3r_3ca613a1}```
+
+### Note
+
+You can use `cd` command to change directory
+
+`pwd` to print name of current/working directory
+
+If you want to learn more about command flags, use the `man` command followed by the name of the command to get more information!
