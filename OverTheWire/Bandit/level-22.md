@@ -9,8 +9,8 @@ To find the password for level 22, you need to `cd` to the `/etc/cron.d/`. There
 
 Next, `cat cronjob_bandit22` and you will see that this file will run the script `/usr/bin/cronjob_bandit22.sh`
 
-![](assets/level-21/cron.png)
+![](assets/level-22/cron.png)
 
 The script contains a command that prints the password for level 22 to a file. Now, you just need to read that file and you will get the password!
 
-![](assets/level-21/password.png)
+![](assets/level-22/password.png)
