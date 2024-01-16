@@ -1,2 +1,2 @@
-# Set default behavior to automatically normalize line endings
+# Auto detect text files and perform LF normalization.
 * text=auto
