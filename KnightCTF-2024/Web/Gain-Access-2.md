@@ -21,7 +21,9 @@ Look at the `Resend Code` function, looks like it only accepts `root@knightctf.c
 
 What if I add another email besides `root@knightctf.com`?
 
-And I added `27fbec16-85a8-497b-86ff-5bf0580abdd0@email.webhook.site` to the request by using `[]`, which makes it become a list
+![hmmm](https://i.imgur.com/iPxv78U.jpg)
+
+And I added `27fbec16-85a8-497b-86ff-5bf0580abdd0@email.webhook.site` to the request by using `[]`, which makes it become a list. You can see more about how it works [here](https://www.w3schools.com/js/js_json_arrays.asp)
 
 ```json
 { "email":["root@knightctf.com","27fbec16-85a8-497b-86ff-5bf0580abdd0@email.webhook.site"] }

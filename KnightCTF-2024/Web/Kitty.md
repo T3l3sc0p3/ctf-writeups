@@ -2,7 +2,7 @@
 
 ![Kitty](img/kitty.png)
 
-First, check the source code and I see the credentials in the *script.js** file. It's `Username:Password` as you can see in the image below
+First, check the source code and I see the credentials in the **script.js** file. It's `Username:Password` as you can see in the image below
 
 ![cred](img/kitty-cred.png)
 
