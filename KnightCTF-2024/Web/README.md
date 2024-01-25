@@ -6,7 +6,7 @@ In this challenge, we need to read the **flag.txt** file to get flag. And as I s
 
 To bypass 403, I used `Forwarded-For: 127.0.0.1` header from [hacktricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/403-and-401-bypasses), and that's it!
 
-![hmm](img/readme-flag.img)
+![hmm](img/readme-flag.png)
 
 `Flag: KCTF{kud05w3lld0n3!}`
 
