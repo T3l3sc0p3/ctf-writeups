@@ -31,7 +31,7 @@ I tried it and it worked. The website sent the code to my email as well
 
 ![code](img/gain-access-2-code.png)
 
-![Noice](https://imgur.com/jwYlN9G)
+![Noice](https://i.imgur.com/jwYlN9G.gif)
 
 Lastly, I entered the code and got the flag for `Gain Access 2`!
 
