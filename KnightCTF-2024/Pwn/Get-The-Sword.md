@@ -80,7 +80,7 @@ But I don't see the `Segmentation Fault` here, so I'll continue to test some val
 
 ![28 chars](img/get-the-sword-28.png)
 
-We can then add 4 more bytes to overflow the EBP register
+Because this is 32-bit program, we can then add 4 more bytes to overflow the EBP register. If it's 64-bit program, the bytes will be 8 to overflow the RBP register
 
 ```sh
 python -c "print('A'*32)" | ./get_sword
@@ -88,7 +88,7 @@ python -c "print('A'*32)" | ./get_sword
 
 Finally, by adding the address of the `getSword()` function, we can call it and retrieve the flag
 
-You can use **[gdb](https://github.com/hugsy/gef)** to get the address of the `getSword()` function or use **pwntools** to find it faster.
+You can use **[gdb](https://github.com/hugsy/gef)** to get the address of the `getSword()` function or use **pwntools** to find it faster
 
 This is the exploit script:
 
