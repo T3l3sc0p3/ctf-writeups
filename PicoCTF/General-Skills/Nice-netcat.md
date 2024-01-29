@@ -13,7 +13,7 @@ There is a nice program that you can talk to by using this command in a shell: `
 
 After running the command `nc mercury.picoctf.net 7449`, I noticed that the output consisted of ASCII in decimal format separated by new lines
 
-Therefore, I wrote a bash script to instantly convert these numbers into characters. But you can also do it manually if you want to~
+Therefore, I wrote a [bash script](assets/Nice-netcat.../script/decimal-to-ascii.sh) to instantly convert these numbers into characters. But you can also do it manually if you want to~
 
 ```
 #!/bin/bash
