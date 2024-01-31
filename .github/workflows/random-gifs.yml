@@ -3,10 +3,7 @@ name: Create Random GIFs
 on:
   schedule:
     - cron: "0 3 1 * *"
-  push:
-      branches:
-        - master
-        - main
+    - cron: "0 3 15 * *"
 
 permissions:
     contents: write
