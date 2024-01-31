@@ -1,7 +1,7 @@
 import os, sys, requests, yaml, random
 
 def load():
-    with open(".github/workflows/random-gifs.yml", "r") as file:
+    with open(".github/workflows/config.yml", "r") as file:
         config = yaml.safe_load(file)
     return config["github"]
 
