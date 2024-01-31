@@ -1,6 +1,0 @@
-github:
-  token: ${{ secrets.GITHUB_TOKEN }}
-  repo_user: "T3l3sc0p3"
-  repo_name: "CDN-for-personal-use"
-  branch: "Kuriyama-Mirai"
-  directory: "gifs"

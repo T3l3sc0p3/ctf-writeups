@@ -1,10 +1,5 @@
 import os, sys, requests, yaml, random
 
-def load():
-    with open(".github/workflows/config.yml", "r") as file:
-        config = yaml.safe_load(file)
-    return config["github"]
-
 def get_links(token, repo_user, repo_name, branch, dirc):
     headers = {"Authorization": f"Bearer {token}"}
     api_url = f"https://api.github.com/repos/{repo_user}/{repo_name}/contents/{dirc}?ref={branch}"
@@ -33,12 +28,11 @@ def update(path, link):
                 file.write(updated_content)
 
 def main(file_path):
-    config = load()
-    token = config["token"]
-    repo_user = config["repo_user"]
-    repo_name = config["repo_name"]
-    branch = config["branch"]
-    dirc = config["directory"]
+    token = os.getenv("REPO_TOKEN")
+    repo_user = os.getenv("REPO_USER")
+    repo_name = os.getenv("REPO_NAME")
+    branch = os.getenv("BRANCH")
+    dirc = os.getenv("DIRECTORY")
     links = get_links(token, repo_user, repo_name, branch, dirc)
     update(file_path, random.choice(links))
 
