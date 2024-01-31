@@ -28,11 +28,11 @@ def update(path, link):
                 file.write(updated_content)
 
 def main(file_path):
-    token = os.getenv("REPO_TOKEN")
-    repo_user = os.getenv("REPO_USER")
-    repo_name = os.getenv("REPO_NAME")
-    branch = os.getenv("BRANCH")
-    dirc = os.getenv("DIRECTORY")
+    token = os.getenv("repo_token")
+    repo_user = os.getenv("repo_user")
+    repo_name = os.getenv("repo_name")
+    branch = os.getenv("branch")
+    dirc = os.getenv("directory")
     links = get_links(token, repo_user, repo_name, branch, dirc)
     update(file_path, random.choice(links))
 
