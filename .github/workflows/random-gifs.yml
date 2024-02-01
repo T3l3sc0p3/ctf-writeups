@@ -31,9 +31,14 @@ jobs:
 
       - name: Create random gifs
         run: |
-            python ".github/script/random_gif.py" "README.md" "p"
-            git config --local user.name "github-actions[bot]"
-            git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md
-            git commit -m "Create random GIFs"
-            git push
+            file_name="README.md"
+            python ".github/script/random_gif.py" "$file_name" "p"
+            if [[ $(git status --porcelain) ]]; then
+                git config --local user.name "github-actions[bot]"
+                git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                git add "$file_name"
+                git commit -m "Create random GIFs"
+                git push
+            else
+                echo "No changes detected"
+            fi
