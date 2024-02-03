@@ -15,7 +15,7 @@ ssh bandit18@bandit.labs.overthewire.org -p 2220 "ls"
 
 It still logout, but now it also run `ls` command as you can see here
 
-![](assets/level-19/readme.png)
+![](assets/level-19/img/readme.png)
 
 Finally, you just need to read the file **readme** and you will get the password
 

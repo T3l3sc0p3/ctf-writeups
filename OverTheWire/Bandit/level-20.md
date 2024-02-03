@@ -7,10 +7,10 @@ To gain access to the next level, you should use the setuid binary in the homedi
 
 To execute the binary file, just add `./` before that file name
 
-![](assets/level-20/execute.png)
+![](assets/level-20/img/execute.png)
 
 You will see that this file will allow us to run the command as another user (bandit20)
 
 And you also can get the password of level 20 through this file by using this command:
 
-![](assets/level-20/password.png)
+![](assets/level-20/img/password.png)

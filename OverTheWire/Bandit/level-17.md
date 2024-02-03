@@ -9,7 +9,7 @@ To complete this level, you will need to use `nmap`, a network exploration tool 
 
 To scan the open ports within the range of 31000 to 32000, run the command: `nmap localhost -T4 -p31000-32000`. After running this command, you can see that there are 5 open ports:
 
-![ports](assets/level-17/scan.png)
+![ports](assets/level-17/img/scan.png)
 
 Next, you can use the `-sV` flag to identify which of these open ports are running SSL (`-sV` is used to probe open ports to determine service/version info):
 
@@ -17,7 +17,7 @@ Next, you can use the `-sV` flag to identify which of these open ports are runni
 nmap localhost -sV -T4 -p31000-32000
 ```
 
-![ssl](assets/level-17/ssl.png)
+![ssl](assets/level-17/img/ssl.png)
 
 Now, you will see that only 2 ports are running SSL: port 31518 and port 31790. However, port 31518 is simply an `echo`, meaning that it will just repeat the password that you input so I will focus on port 31790
 
@@ -29,7 +29,7 @@ openssl s_client -connect localhost:31790
 
 After entering the password, it will fetch the private SSH key, which is similar to what we did in [level 14](https://github.com/T3l3sc0p3/ctf-writeups/blob/master/OverTheWire/Bandit/level-14.md). To proceed, first you need to save this private key to a file (in this case is **sshkey.private**). After saving, connect to the server using the command `ssh bandit17@bandit.labs.overthewire.org -p 2220 -i sshkey.private`
 
-![chmod](assets/level-17/chmod.png)
+![chmod](assets/level-17/img/chmod.png)
 
 Oh, look like here **sshkey.private** file permission should be changed using the `chmod 600 sshkey.private` command
 

@@ -9,4 +9,4 @@ There are 2 files in the homedirectory: **passwords.old and passwords.new**. The
 
 Run `diff passwords.old passwords.new` and take the second password, that's it!
 
-![diff](assets/level-18/diff.png)
+![diff](assets/level-18/img/diff.png)
