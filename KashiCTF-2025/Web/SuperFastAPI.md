@@ -20,11 +20,11 @@ Let's create a user first. Click **Try it out** at `/create` endpoint, then inpu
 
 Here I created **admin**
 
-![created](superfastapi-created.png)
+![created](img/superfastapi-created.png)
 
 Next, I see that `/get/admin` retrieves the information for the user **admin**, and it also shows a **role**
 
-![role](superfastapi-role.png)
+![role](img/superfastapi-role.png)
 
 `/update/admin` will update information for user **admin** and the `/flag/admin` will get the flag
 

@@ -4,7 +4,7 @@
 
 As you can see, this is a chess board and **White** moves to checkmate
 
-![](img/chall.png)
+![](img/chall.jpg)
 
 First, I use `exiftool` and I found a comment `Use the moves as a key to the flag, separated by _`
 
