@@ -22,6 +22,8 @@ So the password is `Aakash`
 stegsnow -C -p 'Aakash' poemm.txt
 ```
 
-I got the link after extract `https://pastebin.com/HVQfa14Z`. In this link, I realized this is **Cow Language**, and I just need to use an online tool to decode it like: https://www.cachesleuth.com/cow.html
+I got the link after extract `https://pastebin.com/HVQfa14Z`
+
+In this link, I realized this is **Cow Language**, and I just need to use an online tool to decode it like: https://www.cachesleuth.com/cow.html
 
 `Flag: KashiCTF{Love_Hurts_5734b5f}`
