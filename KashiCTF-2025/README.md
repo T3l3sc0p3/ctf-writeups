@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.jpg">
+  <img src="banner.png">
 </p>
 
 # KashiCTF 2025
